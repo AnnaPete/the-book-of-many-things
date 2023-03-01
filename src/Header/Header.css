@@ -1,0 +1,34 @@
+.header {
+  background-color: aqua;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  width: 80vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  height: 7vh;
+  width: 7vw;
+  margin: 5%;
+}
+
+.dnd-title {
+  height: 50px;
+  width: 160px;
+  margin: 5%;
+}
