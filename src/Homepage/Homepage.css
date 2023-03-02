@@ -1,0 +1,44 @@
+html, body {
+  background-image: url('../Images/map.jpeg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+  width: 100vw;
+}
+
+img {
+  height: 45vh;
+  margin: 1%;
+}
+
+h2, .greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(169, 169, 169, 0.634);
+  margin-top: 3em;
+  margin-left: 6em;
+  margin-bottom: 3em;
+  font-size: 2em;
+  max-width: 60%
+}
+
+p {
+  margin-top: 1em;
+  font-size: larger;
+}
+
+.homepage-body {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(169, 169, 169, 0.634);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5em;
+}
