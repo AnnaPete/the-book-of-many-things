@@ -1,14 +1,12 @@
 import './Header.css'
 import React from 'react'
 import title from '../Images/title.png'
-import logo from '../Images/dd-logo.webp'
 // import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <header className='header'>
       <div className='logo-container'>
-        <img className='logo' src={logo} alt='dungeons and dragons logo' />
         <img className='dnd-title' src={title} alt='dungeons and dragons'/>
       </div>
       <div className='title-container'>

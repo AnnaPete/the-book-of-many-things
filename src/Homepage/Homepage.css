@@ -6,10 +6,11 @@ html, body {
   justify-content: center;
   height: 85vh;
   width: 100vw;
+  font-family: fantasy;
 }
 
 img {
-  height: 45vh;
+  max-height: 45vh;
   margin: 1%;
 }
 
@@ -17,23 +18,27 @@ h2, .greeting {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(169, 169, 169, 0.634);
-  margin-top: 3em;
+  background-color: rgba(255, 255, 255, 0.84);
+  margin-top: 2em;
   margin-left: 6em;
-  margin-bottom: 3em;
-  font-size: 2em;
+  margin-bottom: 2em;
+  font-size: 36px;
   max-width: 60%
 }
 
 p {
   margin-top: 1em;
-  font-size: larger;
+  font-size: 21px;
+}
+
+h3 {
+  font-size: 26px;
 }
 
 .homepage-body {
   display: flex;
   flex-direction: row;
-  background-color: rgba(169, 169, 169, 0.634);
+  background-color: rgba(255, 255, 255, 0.84);
 }
 
 .intro {
