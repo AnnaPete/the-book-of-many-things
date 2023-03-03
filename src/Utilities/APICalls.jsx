@@ -1,7 +1,5 @@
 export const getData = () => {
-  return fetch('https://thebookofmanythings.herokuapp.com/api/v1/data', {
-    mode: 'no-cors'
-  })
+  return fetch('https://thebookofmanythings.herokuapp.com/api/v1/data')
   .then(response => {
     if (response.ok) {
       return response.json()

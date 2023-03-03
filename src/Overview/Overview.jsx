@@ -1,4 +1,5 @@
 import React from 'react'
+import DetailsPage from '../DetailsPage/DetailsPage'
 import './Overview.css'
 
 const Overview = ( { data, title } ) => {
@@ -11,6 +12,12 @@ const Overview = ( { data, title } ) => {
     })
   }
 
+  const showDetails = () => {
+    return (
+      <DetailsPage />
+    )
+  }
+
   return (
     <div className='overview-container'>
       <div className='overview-body'>
@@ -21,7 +28,7 @@ const Overview = ( { data, title } ) => {
             <ol>{displayData()}</ol>
           </section>
           <section className='buttons'>
-            <button>More Info</button>
+            <button onClick={() => showDetails()}>More Info</button>
           </section>
         </div>
       </div>
