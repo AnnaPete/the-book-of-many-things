@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-// import { getData } from '../Utilities/APICalls'
-import { Router, Route, Redirect } from 'react-router-dom'
+import React from 'react'
+import { getData } from '../Utilities/APICalls'
+import { Switch, Route } from 'react-router-dom'
 import Homepage from '../Homepage/Homepage'
 import Header from '../Header/Header'
 import Overview from '../Overview/Overview'
@@ -10,27 +10,31 @@ import './App.css'
 
 
 
-class App extends Component {
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      data: [],
-      error: ''
+      data: {},
+      isLoading: true,
+      error: null
     }
   }
 
-  // componentDidMount = () => {
-  //   getData()
-  //   .then(data => {
-  //     console.log(data)
-  //     this.setState({ data: [...data] })
-  //   })
-  //   .catch(error => {
-  //     this.setError(error)
-  //   })
-  // }
-
-  
+  componentDidMount = () => {
+    getData()
+    .then(data => {
+      this.setState({
+        data: data, 
+        isLoading: false
+      })
+    })
+    .catch(error => {
+      this.setState({
+        error: error,
+        isLoading: false
+      })
+    })
+  }
 
   setError = (error) => {
     if(error === 404) {
@@ -44,15 +48,32 @@ class App extends Component {
   }
 
   render() {
+    const { data, isLoading, error } = this.state
+
+    if (isLoading) {
+      return (
+        <h3>Loading...</h3>
+      )
+    }
+
+    if (error) {
+      return (
+        <h3>Error: {error.message}</h3>
+      )
+    }
+
     return (
       <main className="App">
-        <Header />
-        <Router>
-            <Route exact path='/' render={ () => <Homepage /> } />
-            {/* <Route exact path='/overview' render={ ({match}) => <Overview /> } /> */}
-            {this.state.error && <p className="error-message">{this.state.error}</p>}
-            <Redirect to='/' />
-        </Router>
+        <Header data={ data }/>
+        <Switch>
+          <Route exact path='/' component={ Homepage } />
+          <Route path='/:path' render={({match}) => {
+            const endpoint = match.params.path
+            return (
+              <Overview data={data[endpoint]} title={endpoint}/>
+            )
+          }} />
+        </Switch>
       </main>
     )
   }
