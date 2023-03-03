@@ -1,10 +1,9 @@
 import './Header.css'
 import React from 'react'
 import title from '../Images/title.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 const Header = ( { data } ) => {
-
   const renderLinks = () => {
     if (!data) {
       return null
@@ -17,9 +16,9 @@ const Header = ( { data } ) => {
 
   return (
     <header className='header'>
-      <div className='logo-container'>
-        <img className='dnd-title' src={title} alt='dungeons and dragons'/>
-      </div>
+      <Link to='/'>
+        <img className='dnd-title' src={title} alt='dungeons and dragons' />
+      </Link>
       <div className='title-container'>
         <h1 className='title'>The Book of Many Things</h1>
         <nav>
