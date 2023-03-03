@@ -22,7 +22,9 @@ const Header = ( { data } ) => {
       <div className='title-container'>
         <h1 className='title'>The Book of Many Things</h1>
         <nav>
-          {renderLinks()}
+          <div className='links'>
+            {renderLinks()}
+          </div>
         </nav>
       </div>
     </header>
