@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 // import { getData } from '../Utilities/APICalls'
-// import { Route, Switch } from 'react-router-dom'
+import { Router, Route, Redirect } from 'react-router-dom'
 import Homepage from '../Homepage/Homepage'
 import Header from '../Header/Header'
+import Overview from '../Overview/Overview'
 // import SavedPage from '../SavedPage/SavedPage'
-// import DetailsPage from '../DetailsPage/DetailsPage'
 import './App.css'
+
+
+
 
 class App extends Component {
   constructor(props) {
@@ -44,8 +47,12 @@ class App extends Component {
     return (
       <main className="App">
         <Header />
-        <Homepage />
-        {this.state.error && <p className="error-message">{this.state.error}</p>}
+        <Router>
+            <Route exact path='/' render={ () => <Homepage /> } />
+            {/* <Route exact path='/overview' render={ ({match}) => <Overview /> } /> */}
+            {this.state.error && <p className="error-message">{this.state.error}</p>}
+            <Redirect to='/' />
+        </Router>
       </main>
     )
   }
