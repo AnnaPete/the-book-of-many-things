@@ -10,21 +10,21 @@ const Header = ( { data } ) => {
     }
 
     return Object.keys(data).map((key) => (
-      <NavLink to={`/${key}`} key={key} >{key}</NavLink>
+      <NavLink to={`/${key}`} key={key}>{key}</NavLink>
     ))
   }
 
   return (
     <header className='header'>
-      <Link to='/'>
-        <img className='dnd-title' src={title} alt='dungeons and dragons' />
-      </Link>
+      <div className='logo'>
+        <Link to='/'>
+          <img className='dnd-title' src={title} alt='dungeons and dragons' />
+        </Link>
+      </div>
       <div className='title-container'>
-        <h1 className='title'>The Book of Many Things</h1>
+        <span className='title'>The Book of Many Things</span>
         <nav>
-          <div className='links'>
-            {renderLinks()}
-          </div>
+          {renderLinks()}
         </nav>
       </div>
     </header>
