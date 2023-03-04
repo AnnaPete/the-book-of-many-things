@@ -20,4 +20,10 @@ describe('Overview spec', () => {
       .url()
       .should('eq', 'http://localhost:3000/classes/details')
   })
+
+  it('should redirect to the homepage in the event of a bad url', () => {
+    cy.visit('http://localhost:3000/clas')
+      .url()
+      .should('eq', 'http://localhost:3000/')
+  })
 })
