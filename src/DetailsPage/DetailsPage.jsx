@@ -1,5 +1,6 @@
 import React from 'react'
 import raid from '../Images/dungeon-raid.png'
+import sword from '../Images/sword-coast.jpeg'
 import './DetailsPage.css'
 
 function DetailsPage({ details }) {
@@ -15,11 +16,15 @@ function DetailsPage({ details }) {
   return (
     <div className='details'>
       <div className='details-body'>
-        <img src={raid} alt='adventurers fighting undead'/>
+        <div className='images'>
+          <img src={raid} alt='adventurers fighting undead'/>
+          <img src={sword} alt='drow versus balrog'/>
+        </div>
         <div className='details-text'>
           <h1>More Info</h1>
           {displayDetails()}
         </div>
+        <button className='back'>Go Back</button>
       </div>
     </div>
   )
