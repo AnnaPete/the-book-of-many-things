@@ -24,7 +24,6 @@ function DetailsPage({ details }) {
           <h1>More Info</h1>
           {displayDetails()}
         </div>
-        <button className='back'>Go Back</button>
       </div>
     </div>
   )
