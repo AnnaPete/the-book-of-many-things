@@ -1,8 +1,12 @@
 import React from 'react'
-import DetailsPage from '../DetailsPage/DetailsPage'
+import { useHistory } from 'react-router-dom'
 import './Overview.css'
 
 const Overview = ( { data, title } ) => {
+  const history = useHistory()
+  const handleChange = () => {
+    history.push(`/${title}/details`)
+  }
 
   const displayData = () => {
     return data.map((item, i) => {
@@ -10,12 +14,6 @@ const Overview = ( { data, title } ) => {
         <li key={i}>{ item }</li>
       )
     })
-  }
-
-  const showDetails = () => {
-    return (
-      <DetailsPage />
-    )
   }
 
   return (
@@ -27,7 +25,7 @@ const Overview = ( { data, title } ) => {
             <ul>{displayData()}</ul>
           </section>
           <section className='buttons'>
-            <button onClick={() => showDetails()}>More Info</button>
+            <button onClick={ handleChange }>More Info</button>
           </section>
         </div>
       </div>
