@@ -1,18 +1,31 @@
-h2 {
-  background-color: transparent;
-  text-transform: capitalize;
+h1 {
+  margin-top: 1%;
 }
 
-li {
-  margin-bottom: 15px;;
+p {
+  margin-bottom: 15px;
+  margin-left: 1%;
 }
 
-.overview-text {
+img {
+  max-height: 45vh;
+  margin: 1%;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.details-body {
+  justify-content: center;
+  align-items: center;
+}
+
+.details-text {
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.84);
   font-size: x-large;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
+  margin-left: 1%;
 }

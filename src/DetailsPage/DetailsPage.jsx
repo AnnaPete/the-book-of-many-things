@@ -1,11 +1,32 @@
 import React from 'react'
+import raid from '../Images/dungeon-raid.png'
+import sword from '../Images/sword-coast.jpeg'
 import './DetailsPage.css'
 
-function DetailsPage() {
+function DetailsPage({ details }) {
+
+  const displayDetails = () => {
+    return details.map((item, i) => {
+      return (
+        <p key={i}>{ item }</p>
+      )
+    })
+  }
+
   return (
-    <h1>Yo</h1>
+    <div className='details'>
+      <div className='details-body'>
+        <div className='images'>
+          <img src={raid} alt='adventurers fighting undead'/>
+          <img src={sword} alt='drow versus balrog'/>
+        </div>
+        <div className='details-text'>
+          <h1>More Info</h1>
+          {displayDetails()}
+        </div>
+      </div>
+    </div>
   )
 }
-
 
 export default DetailsPage
