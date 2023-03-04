@@ -21,11 +21,10 @@ const Overview = ( { data, title } ) => {
   return (
     <div className='overview-container'>
       <div className='overview-body'>
-        <img src='' alt='' />
         <div className='overview-description'>
           <section className='overview-text'>
             <h2>{title}</h2>
-            <ol>{displayData()}</ol>
+            <ul>{displayData()}</ul>
           </section>
           <section className='buttons'>
             <button onClick={() => showDetails()}>More Info</button>
