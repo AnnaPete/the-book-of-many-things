@@ -5,6 +5,8 @@ import Homepage from '../Homepage/Homepage'
 import Header from '../Header/Header'
 import Overview from '../Overview/Overview'
 import './App.css'
+import DetailsPage from '../DetailsPage/DetailsPage'
+import { details } from '../Utilities/details-data'
 
 
 
@@ -66,6 +68,12 @@ class App extends React.Component {
         <Header data={ data }/>
         <Switch>
           <Route exact path='/' component={ Homepage } />
+          <Route path='/:path/details' render={({match}) => {
+            const endpoint = match.params.path
+            return (
+              <DetailsPage details={details[endpoint]} />
+            )
+          }} />
           <Route path='/:path' render={({match}) => {
             const endpoint = match.params.path
             return (
