@@ -27,7 +27,6 @@ h2, .greeting {
 }
 
 p {
-  margin-top: 1em;
   font-size: 21px;
 }
 
@@ -45,5 +44,4 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 5em;
 }

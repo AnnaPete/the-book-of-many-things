@@ -1,0 +1,18 @@
+h2 {
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+li {
+  margin-bottom: 15px;;
+}
+
+.overview-text {
+  background-color: rgba(255, 255, 255, 0.84);
+  font-size: x-large;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
