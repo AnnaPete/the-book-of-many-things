@@ -36,7 +36,7 @@ DetailsPage.propTypes = {
   props: PropTypes.shape({
     details: PropTypes.shape({
       item: PropTypes.string.isRequired,
-      i: PropTypes.string, isRequired
+      i: PropTypes.string.isRequired
     })
   })
 }
