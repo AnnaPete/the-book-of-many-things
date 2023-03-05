@@ -43,7 +43,8 @@
 
 ## About The Project
 
-Image goes here
+React App - 4 March 2023 - Watch Video
+
 
 The Book of Many Things is an app designed to introduce newcomers to the world of Dungeons & Dragons (D&D), a popular tabletop role-playing game. If you've never played D&D before but are curious about it after hearing about it or seeing it in the media, this app is for you!
 
