@@ -13,6 +13,7 @@
 
 .title-container {
   height: 10vh;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,9 +52,6 @@ a {
 }
 
 @media screen and (max-width: 564px) {
-  /* .dnd-title {
-    height: 9vh;
-  } */
   .title {
     font-size: 0.17em;
   }
