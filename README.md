@@ -1,68 +1,127 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-## Available Scripts
+## Author
+ [![Anna Peterson][Anna-badge]][Anna-url]
 
-In the project directory, you can run:
+<br />
 
-### `npm start`
+  <a href="https://github.com/AnnaPete/the-book-of-many-things">
+    <h1 align="center">Quizard</h1>
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3 align="center"></h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <p align="center">
+    Quiz App 
+    <br />
+    <a href="https://github.com/AnnaPete/the-book-of-many-things"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/AnnaPete/the-book-of-many-things/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/AnnaPete/the-book-of-many-things/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm test`
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About The Project
 
-### `npm run build`
+Image goes here
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Book of Many Things is an app designed to introduce newcomers to the world of Dungeons & Dragons (D&D), a popular tabletop role-playing game. If you've never played D&D before but are curious about it after hearing about it or seeing it in the media, this app is for you!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The homepage provides a brief introduction to the game and its basic concepts. From there, you can use the links in the header to access more detailed information about the game mechanics, character creation, combat, and more. If you're not sure where to start, simply click on the "More Info" button on the homepage to see a curated list of resources that will help you get started.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Book of Many Things is designed to be user-friendly and accessible to anyone, regardless of their prior knowledge of D&D. The app's minimalist design and straightforward navigation make it easy to find what you're looking for, and the helpful tips and resources throughout the app will guide you through the basics of the game.
 
-### `npm run eject`
+Whether you're a seasoned gamer looking to introduce your friends to the world of D&D or a complete newcomer who's never played a tabletop RPG before, The Book of Many Things is the perfect app to help you get started. So what are you waiting for? Download the app today and start exploring the many wonders of Dungeons & Dragons!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built With
+- [![React][React]][react-url] 
+- [![Cypress]][Cypress-url]
+- [![Javascript][javascript.js]][javascript-url]
+- [![CSS][css]][css-url]
+- [![HTML][html]][html-url]
+- [![Webpack][webpack]][webpack-url]
+- [![API][api]][api-url]
+- [![Git][git]][git-url]
+- [![GitHub][github]][github-url]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
 
-## Learn More
+### Installation
+## To use the deployed app visit: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the Repo from the [Repository](https://github.com/AnnaPete/the-book-of-many-things)
+2. Clone the repo
+   ```sh
+   git@github.com:AnnaPete/the-book-of-many-things.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Run npm start
+   ```sh
+   npm start
+   ```
+5. Use the Link that is given in the Terminal & Open in Browser
+   ```sh
+   Example: http://localhost:3000/
+   ```
+6. Once finished, close using control + c
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+See the [open issues](https://github.com/AnnaPete/the-book-of-many-things/issues).
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Making a Progressive Web App
+[Anna-badge]: https://img.shields.io/badge/-Anna%20Peterson-Purple
+[Anna-url]: https://github.com/AnnaPete
+[React]: https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
+[react-url]: https://reactjs.org/
+[mocha]: https://img.shields.io/badge/Mocha-FF2D20?style=for-the-badge&logo=mocha&logoColor=white
+[mocha-url]: https://mochajs.org/
+[Cypress]: https://img.shields.io/badge/CYPRESS-000000?style=for-the-badge&logo=cypress&logoColor=purple
+[Cypress-url]: https://www.cypress.io/
+[chai]: https://img.shields.io/badge/Chai-20232A?style=for-the-badge&logo=chai&logoColor=61DAFB
+[chai-url]: https://www.chaijs.com/
+[webpack]: https://img.shields.io/badge/Webpack-563D7C?style=for-the-badge&logo=webpack&logoColor=white
+[webpack-url]: https://webpack.js.org/
+[css]: https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=css&logoColor=white
+[css-url]: https://www.w3.org/Style/CSS/Overview.en.html
+[html]: https://img.shields.io/badge/HTML-4A4A55?style=for-the-badge&logo=HTML&logoColor=FF3E00
+[html-url]: https://www.w3schools.com/howto/howto_make_a_website.asp
+[javascript.js]: https://img.shields.io/badge/JavaScript-0769AD?style=for-the-badge&logo=javascript&logoColor=white
+[javascript-url]: https://www.javascript.com/
+[api]: https://img.shields.io/badge/API-15EA75?style=for-the-badge&logo=HTML&logoColor=FF3E00
+[api-url]: https://www.w3schools.com/js/js_api_intro.asp
+[github]: https://img.shields.io/badge/GitHub-22043C?style=for-the-badge&logo=github&logoColor=FF3E00
+[github-url]: https://github.com/
+[git]: https://img.shields.io/badge/Git-2E0305?style=for-the-badge&logo=git&logoColor=FF3E00
+[git-url]: https://git-scm.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
