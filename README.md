@@ -83,6 +83,8 @@ OR
    ```sh
    git@github.com:AnnaPete/the-book-of-many-things.git
    ```
+   
+THEN
 3. Install NPM packages
    ```sh
    npm install
