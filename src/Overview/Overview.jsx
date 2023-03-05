@@ -36,7 +36,7 @@ const Overview = ( { data, title } ) => {
 
 export default Overview
 
-App.propTypes = {
+Overview.propTypes = {
   props: PropTypes.shape({
     data: PropTypes.arrayOf(PropTypes.object).isRequired,
     title: PropTypes.string.isRequired
