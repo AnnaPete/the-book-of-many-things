@@ -85,6 +85,7 @@ OR
    ```
    
 THEN
+
 3. Install NPM packages
    ```sh
    npm install
