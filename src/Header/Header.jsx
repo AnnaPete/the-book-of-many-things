@@ -2,6 +2,7 @@ import './Header.css'
 import React from 'react'
 import title from '../Images/title.png'
 import { NavLink, Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Header = ( { data } ) => {
   const renderLinks = () => {
@@ -32,3 +33,11 @@ const Header = ( { data } ) => {
 }
 
 export default Header
+
+Header.propTypes = {
+  props: PropTypes.shape({
+    data: PropTypes.shape({
+      key: PropTypes.string.isRequired
+    })
+  })
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import raid from '../Images/dungeon-raid.png'
 import sword from '../Images/sword-coast.jpeg'
+import PropTypes from 'prop-types'
 import './DetailsPage.css'
 
 function DetailsPage({ details }) {
@@ -30,3 +31,12 @@ function DetailsPage({ details }) {
 }
 
 export default DetailsPage
+
+DetailsPage.propTypes = {
+  props: PropTypes.shape({
+    details: PropTypes.shape({
+      item: PropTypes.string.isRequired,
+      i: PropTypes.string.isRequired
+    })
+  })
+}
