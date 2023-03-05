@@ -43,7 +43,10 @@
 
 ## About The Project
 
-<img src="https://www.loom.com/embed/05be0c6267394139b88f3a8ea0bf86a5" />
+  <a href="https://www.loom.com/share/05be0c6267394139b88f3a8ea0bf86a5">
+    <p>The Book of Many Things - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/05be0c6267394139b88f3a8ea0bf86a5-with-play.gif">
+  </a>
 
 The Book of Many Things is an app designed to introduce newcomers to the world of Dungeons & Dragons (D&D), a popular tabletop role-playing game. If you've never played D&D before but are curious about it after hearing about it or seeing it in the media, this app is for you!
 
