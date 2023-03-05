@@ -12,7 +12,7 @@
 <h3 align="center"></h3>
 
   <p align="center">
-    Quiz App 
+    Dungeons & Dragons Information App 
     <br />
     <a href="https://github.com/AnnaPete/the-book-of-many-things"><strong>Explore the docs »</strong></a>
     <br />
@@ -43,7 +43,7 @@
 
 ## About The Project
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/05be0c6267394139b88f3a8ea0bf86a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<img src="https://www.loom.com/embed/05be0c6267394139b88f3a8ea0bf86a5" />
 
 The Book of Many Things is an app designed to introduce newcomers to the world of Dungeons & Dragons (D&D), a popular tabletop role-playing game. If you've never played D&D before but are curious about it after hearing about it or seeing it in the media, this app is for you!
 
