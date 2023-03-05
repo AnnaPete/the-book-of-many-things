@@ -1,15 +1,12 @@
 import React from 'react'
 import { getData } from '../Utilities/APICalls'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Homepage from '../Homepage/Homepage'
 import Header from '../Header/Header'
 import Overview from '../Overview/Overview'
 import './App.css'
 import DetailsPage from '../DetailsPage/DetailsPage'
 import { details } from '../Utilities/details-data'
-
-
-
 
 class App extends React.Component {
   constructor(props) {
@@ -45,7 +42,6 @@ class App extends React.Component {
     } else {
       this.setState({error: `Something went wrong, please refresh the page and try again.`})
     }
-
   }
 
   render() {
@@ -70,16 +66,25 @@ class App extends React.Component {
           <Route exact path='/' component={ Homepage } />
           <Route path='/:path/details' render={({match}) => {
             const endpoint = match.params.path
+            const pageData = details[endpoint]
+            if (!pageData) {
+              return <Redirect to='/' />
+            }
             return (
-              <DetailsPage details={details[endpoint]} />
+              <DetailsPage details={pageData} />
             )
           }} />
-          <Route path='/:path' render={({match}) => {
+          <Route exact path='/:path' render={({match}) => {
             const endpoint = match.params.path
+            const pageData = data[endpoint]
+            if (!pageData) {
+              return <Redirect to='/' />
+            }
             return (
-              <Overview data={data[endpoint]} title={endpoint}/>
+              <Overview data={pageData} title={endpoint}/>
             )
           }} />
+          <Redirect from='/*' to='/' />
         </Switch>
       </main>
     )
