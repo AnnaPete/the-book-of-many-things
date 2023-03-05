@@ -1,7 +1,9 @@
 html, body {
   background-image: url('../Images/map.jpeg');
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -11,7 +13,7 @@ html, body {
 }
 
 img {
-  max-height: 45vh;
+  max-width: 90vw;
   margin: 1%;
 }
 
@@ -19,6 +21,7 @@ h2, .greeting {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.84);
   margin-top: 2em;
   margin-left: 6em;
@@ -38,6 +41,7 @@ h3 {
 .homepage-body {
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.84);
 }
 
@@ -45,4 +49,20 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 968px) {
+  .homepage-body {
+    flex-direction: column;
+  }
+  .greeting, h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+
 }
