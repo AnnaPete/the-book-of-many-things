@@ -25,6 +25,9 @@ function DetailsPage({ details }) {
           <h1>More Info</h1>
           {displayDetails()}
         </div>
+        <section className='buttons'>
+          <button>Save To Your Info</button>
+        </section>
       </div>
     </div>
   )
