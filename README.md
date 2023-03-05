@@ -14,12 +14,12 @@
   <p align="center">
     Dungeons & Dragons Information App 
     <br />
-    <a href="https://github.com/AnnaPete/the-book-of-many-things"><strong>Explore the docs »</strong></a>
+      <a href="https://github.com/AnnaPete/the-book-of-many-things"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/AnnaPete/the-book-of-many-things/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/AnnaPete/the-book-of-many-things/issues">Request Feature</a>
+      <a href="https://github.com/AnnaPete/the-book-of-many-things/issues">Report Bug</a>
+      ·
+      <a href="https://github.com/AnnaPete/the-book-of-many-things/issues">Request Feature</a>
   </p>
 </div>
 
@@ -73,6 +73,7 @@ Whether you're a seasoned gamer looking to introduce your friends to the world o
 
 ### Installation
 ## To use the deployed app visit: 
+[The Book of Many Things](https://the-book-of-many-things.herokuapp.com/)
 
 1. Fork the Repo from the [Repository](https://github.com/AnnaPete/the-book-of-many-things)
 2. Clone the repo
