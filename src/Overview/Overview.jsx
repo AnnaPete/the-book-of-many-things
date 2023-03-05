@@ -22,7 +22,7 @@ const Overview = ( { data, title } ) => {
       <div className='overview-body'>
         <div className='overview-description'>
           <section className='overview-text'>
-            <h2>{title}</h2>
+            <h2 className='subtitle'>{title}</h2>
             <ul>{displayData()}</ul>
           </section>
           <section className='buttons'>
