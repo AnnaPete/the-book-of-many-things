@@ -76,6 +76,9 @@ Whether you're a seasoned gamer looking to introduce your friends to the world o
 [The Book of Many Things](https://the-book-of-many-things.herokuapp.com/)
 
 1. Fork the Repo from the [Repository](https://github.com/AnnaPete/the-book-of-many-things)
+
+OR
+
 2. Clone the repo
    ```sh
    git@github.com:AnnaPete/the-book-of-many-things.git
