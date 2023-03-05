@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import './Overview.css'
 
 const Overview = ( { data, title } ) => {
@@ -34,3 +35,10 @@ const Overview = ( { data, title } ) => {
 }
 
 export default Overview
+
+App.propTypes = {
+  props: PropTypes.shape({
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
+    title: PropTypes.string.isRequired
+  })
+}

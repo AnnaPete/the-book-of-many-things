@@ -4,9 +4,10 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Homepage from '../Homepage/Homepage'
 import Header from '../Header/Header'
 import Overview from '../Overview/Overview'
-import './App.css'
+import PropTypes from 'prop-types'
 import DetailsPage from '../DetailsPage/DetailsPage'
 import { details } from '../Utilities/details-data'
+import './App.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -92,3 +93,10 @@ class App extends React.Component {
 }
 
 export default App;
+
+App.propTypes = {
+  props: PropTypes.shape({
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
+    isLoading: PropTypes.bool.isRequired
+  })
+}
